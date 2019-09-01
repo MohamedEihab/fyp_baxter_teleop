@@ -1,0 +1,6 @@
+[submodule "ros_ws/src/find-object"]
+	path = ros_ws/src/find-object
+	url = https://github.com/introlab/find-object
+[submodule "ros_ws/src/darknet"]
+	path = ros_ws/src/darknet
+	url = https://github.com/pjreddie/darknet

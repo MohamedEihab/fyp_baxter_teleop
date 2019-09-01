@@ -1,0 +1,19 @@
+<?xml version="1.0"?>
+<package format="2">
+  <name>baxter_teleop</name>
+  <version>0.0.0</version>
+  <description>Package for teleoperating the Baxter and using the virtual reality controll room</description>
+
+  <maintainer email="ma11415@ic.ac.uk">Mohamed-Elfatih Abdelmagid</maintainer>
+
+  <license>BSD</license>
+
+  <buildtool_depend>catkin</buildtool_depend>
+  <build_depend>rospy</build_depend>
+  <build_depend>tf2</build_depend>
+  <build_export_depend>rospy</build_export_depend>
+  <build_export_depend>tf2</build_export_depend>
+  <exec_depend>rospy</exec_depend>
+  <exec_depend>tf2</exec_depend>
+
+</package>

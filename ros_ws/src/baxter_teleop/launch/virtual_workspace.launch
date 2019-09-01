@@ -1,0 +1,9 @@
+<launch>
+<node name="republish_right_hand_camera" type="republish" pkg="image_transport" output="screen" args="raw in:=/cameras/right_hand_camera/image compressed out:=/cameras/right_hand_camera/" />
+
+<node name="republish_left_hand_camera" type="republish" pkg="image_transport" output="screen" args="raw in:=/cameras/left_hand_camera/image compressed out:=/cameras/left_hand_camera/" />
+
+<node name="republish_main_camera" type="republish" pkg="image_transport" output="screen" args="raw in:=/camera/color/image_raw compressed out:=/camera/color/" />
+
+<node name="object_handler" pkg="baxter_teleop"type="ObjectHandler.py" />
+</launch>

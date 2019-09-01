@@ -1,0 +1,18 @@
+<launch>
+	<node name="vive_client" 
+		pkg="baxter_teleop"
+		type="ViveClient.py" />
+
+	<node name="left_controller_ps" 
+		pkg="baxter_teleop" 
+	type="frame_as_posestamped.py"
+		args="left_controller hmd 100"/>
+		<node name="right_controller_ps" 
+	pkg="baxter_teleop" 
+		type="frame_as_posestamped.py"
+		args="right_controller hmd 100"/>
+
+	<node name="baxter_client" 
+		pkg="baxter_teleop"
+		type="BaxterClient.py" />
+</launch>

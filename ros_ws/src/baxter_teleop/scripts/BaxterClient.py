@@ -259,24 +259,3 @@ def main():
 if __name__ == '__main__':
     main()
 
-'''    quaternion_angles= (
-        pose.orientation.x,
-        -pose.orientation.y,
-        pose.orientation.z,
-        pose.orientation.w)
-
-    euler_angles= euler_from_quaternion(quaternion_angles)
-
-    roll = euler_angles[0]
-    pitch = euler_angles[1] + MATH_PI/4
-    yaw = euler_angles[2]
-
-    corrected_quat = quaternion_from_euler(roll, pitch, yaw, 'sxyz')
-    pose.orientation.x = corrected_quat[0]
-    pose.orientation.y = corrected_quat[1]
-    pose.orientation.z = corrected_quat[2]
-    pose.orientation.w = corrected_quat[3]
-
-    pose.position.x = pose.position.x * 1.5
-    pose.position.y = pose.position.y * 1.5
-    pose.position.z = pose.position.z + (v2[2] - v1[2])'''
